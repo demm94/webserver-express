@@ -8,6 +8,19 @@
             <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti veniam aspernatur expedita eum totam soluta, velit aliquid ducimus deserunt odit repudiandae maiores consectetur ipsum id inventore at sequi cupiditate commodi..</p>
             <a class="btn btn-lg btn-primary" href="#" role="button">Demo</a>
         </div>
+        <div class="multimedia">
+            <div class="video">
+                <video id="my_video_1" class="video-js vjs-fluid vjs-default-skin" controls preload="auto" data-setup='{"autoplay": true}'>
+                    <source src="https://mdstrm.com/live-stream-playlist/5c0e8b19e4c87f3f2d3e6a59.m3u8?uid=CVjMFBRyHu3FrY7PBip2D6hn8rOg0kK0&sid=KDbgpFyi5ZXlb4EVc2a39kAmHdbMfarD&pid=c5A05lDvVaaWjmd4UiKnAzfajuNHJqWK&an=screen&at=web-app&av=v5.2.92&ref=https%3A%2F%2Fwww.tvmas.tv%2F&res=0x0&without_cookies=false&dnt=true&access_token=g9pV2eo4ty99ZVjjh9oU3HyX7BJpdvTBDAGQYGC1nipRj6WTXCsyeoUva9Jw8ixRfXoNpy2uEh2" type="application/x-mpegURL">
+                </video>
+  
+            </div>
+        </div>
     </main>
+
+    <script>
+        var player = videojs('my_video_1');
+        player.play();
+    </script>   
     
     {{> footer }}
